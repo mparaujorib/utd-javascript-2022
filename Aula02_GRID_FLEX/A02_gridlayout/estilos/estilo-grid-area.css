@@ -1,0 +1,49 @@
+.container{
+    display: grid;
+    grid-template-rows: 10vh 10vh 35vh 35vh 10vh;
+    grid-template-columns: 20vw 60vw 20vw;
+    gap: 10px;
+    grid-template-areas: 
+    "logo header header"
+    "nav nav nav"
+    "secao-1 secao-1 aside"
+    "secao-2 secao-2 aside"
+    "footer footer footer";
+}
+
+.nova{
+    background-color: turquoise;
+    grid-area: logo;
+}
+
+header{
+    background-color: burlywood;
+    grid-area: header;
+}
+
+nav{
+    background-color: pink;
+    grid-area: nav;
+}
+
+aside{
+    background-color: greenyellow;
+    display: grid;
+    grid-area: aside;
+}
+
+.primeira{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    grid-area: secao-1;
+}
+
+.segunda{
+    background-color: thistle;
+    grid-area: secao-2;
+}
+
+footer{
+    background-color: springgreen;
+    grid-area: footer;
+}

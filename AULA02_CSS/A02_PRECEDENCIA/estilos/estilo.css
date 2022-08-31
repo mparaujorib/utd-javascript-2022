@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+*{ /*regra aplicada a tudo*/
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{ /*seletor*/
+    width: 50vw;
+    height: 10vh;
+    margin: 1rem 1rem 2rem 2rem;
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+    color:darkmagenta !important;
+    background-color: cornflowerblue;
+}
+
+/*.navegacao{
+    float: right;
+}*/
+
+.navegacao>ul{
+    width: 50vw;
+    height: 10vh;
+    margin: 1rem 1rem 2rem 2rem;
+    font-size: 1.5rem;
+    background-color: chartreuse;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.navegacao>ul>li{
+    /*medidas absolutas px cm ...*/
+    /* medidas relativas: em rem vw vh vmin vmax*/
+    font-size: 1em;
+    margin-left: 2rem;
+    display: inline;
+}
+
+.navegacao>ul>li>a{
+    text-decoration: none;
+    color:black;
+}

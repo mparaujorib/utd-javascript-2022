@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando com CSS</title>
+    <link rel="stylesheet" href="./estilos/reset.css"> <!--css linkado via seletor h1 no arquivo estilo.css-->
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    <style>
+        h1{
+            color:blueviolet;
+        }
+    </style> <!--css incorporado tem maior precedencia que o linkado-->
+</head> 
+<body>
+    <h3 style="color:crimson">Estilizando nossa página com CSS</h3> <!--css inline tem maior precedencia dos tres (desaconselhavel)-->
+        <header>
+            <h1>Universidade do Trabalho Digital</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+</body>
+</html>

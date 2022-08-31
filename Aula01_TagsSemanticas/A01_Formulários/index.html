@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--cabeçalho do site-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="produtos.html" method="get"> <!--contém os dados na própria URL (obs:post - cria base de dados em outro arquivo)-->
+        <label>nome*:
+            <input type="text" name="nome" id="nomeId" placeholder="digite seu nome" required>
+        </label><br>
+        <label>idade:
+            <input type="number" name="idade" id="idadeId" placeholder="digite sua idade">
+        </label><br>
+        <label>data de aniversário:
+                <input type="date">
+        </label><br>
+        <label>senha:
+            <input type="password" name="password" id="passwordId" placeholder="digite sua senha">
+        </label><br>
+        <label>email:
+            <input type="email" name="email" id="emailId" placeholder="digite seu endereço de email">
+        </label><br>
+        <h6>ESCOLARIDADE:</h6>
+        <label>fundamental
+            <input type="radio" name="Escolaridade" checked>
+        </label><br>
+        <label>técnico
+            <input type="radio" name="Escolaridade">
+        </label><br>
+        <label>médio
+            <input type="radio" name="Escolaridade">
+        </label><br>
+        <label>superior
+            <input type="radio" name="Escolaridade"> 
+        </label><br>   
+        <h6>CONHECIMENTOS:</h6>
+        <label>
+            <input type="checkbox">
+            COMPUTAÇÃO
+        </label><br>
+        <label>
+            <input type="checkbox">
+            INGLÊS
+        </label><br>
+        <label>
+            <input type="checkbox">
+            NAVEGAÇÃO WEB
+        </label><br>
+        <label>
+            <input type="checkbox">
+            ESCRITA ACADÊMICA
+        </label><br>
+        <H6>NATURALIDADE:</H6>
+        <select name="" id="">
+            <OPTION value="0" disabled selected>Selecione um estado</OPTION>
+            <optgroup label="Nordeste">
+                <option value="ceara">CE</option>
+                <option value="bahia">BA</option>
+                <option value="rio-grande-do-norte">RN</option>
+                <option value="paraiba">PE</option>
+                <option value="piaui">PI</option>
+            </optgroup>
+            <optgroup label="Sudeste">
+                <option value="sao-paulo">SP</option>
+                <option value="minas-gerais">MG</option>
+            </optgroup>
+        </select>
+        <button type="submit">enviar dados</button>
+    </form>
+</body>
+</html>
